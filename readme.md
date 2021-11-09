@@ -1,11 +1,22 @@
 # Next Design Extension Project Templates
 
+- [概要](#概要)
+- [リリースノート](#リリースノート)
+- [インストール方法](#インストール方法)
+- [利用方法](#利用方法)
+- [パッケージのアンインストール方法](#パッケージのアンインストール方法)
+- [nuget.orgへのパッケージの公開方法](#nugetorgへのパッケージの公開方法)
+  - [ローカルから公開する方法](#ローカルから公開する方法)
+  - [Github Actionsによる公開](#github-actionsによる公開)
+
 ## 概要
 * Next Designのエクステンション開発のためのプロジェクトテンプレートです。
 * dotnetのCLIおよび、Visual Studioで利用できます。
 * [Nuget.orgで公開](https://www.nuget.org/packages/NextDesign.Extension.ProjectTemplates/)しています。
 * コマンドラインツール [NDExt](https://www.nuget.org/packages/NDExt/)を利用すると便利です。
 
+## リリースノート
+* バージョンごとの変更点については、[リリースノート](releasenotes.md)を参照して下さい。
 ## インストール方法
 * コマンドプロンプトより次のように実行して下さい。
 
