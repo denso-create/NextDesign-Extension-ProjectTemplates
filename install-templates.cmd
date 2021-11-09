@@ -8,3 +8,4 @@ dotnet pack src -o ./NuPkgs
 rem install templates
 dotnet new --install ./NuPkgs/*.nupkg
 
+pause
