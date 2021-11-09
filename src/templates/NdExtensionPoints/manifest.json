@@ -1,0 +1,6 @@
+{
+	"$schema": "manifest.schema.json",
+	"name": "NdExtension",
+	"main": "NdExtension.dll",
+	"lifecycle": "application"
+}
