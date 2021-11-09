@@ -3,6 +3,8 @@
 ## 概要
 * Next Designのエクステンション開発のためのプロジェクトテンプレートです。
 * dotnetのCLIおよび、Visual Studioで利用できます。
+* [Nuget.orgで公開](https://www.nuget.org/packages/NextDesign.Extension.ProjectTemplates/)しています。
+* コマンドラインツール [NDExt](https://www.nuget.org/packages/NDExt/)を利用すると便利です。
 
 ## インストール方法
 * コマンドプロンプトより次のように実行して下さい。
@@ -47,6 +49,28 @@ Next Design エクステンション                          ndext             
 * また、Visual Studioの新規プロジェクト作成のダイアログでも作成可能です。
 
 ![](docs/images/vs2019-new-project-dialog.png)
+
+## パッケージのアンインストール方法
+
+```
+> dotnet new  --uninstall
+```
+
+と実行すると、下記のように表示されます。`Uninstall Command`で記載されているコマンドを実行して下さい。
+
+```
+  NextDesign.Extension.ProjectTemplates
+    Details:
+      NuGetPackageId: NextDesign.Extension.ProjectTemplates
+      Version: 0.6.7
+      Author: DENSO CREATE INC.
+    Templates:
+      Next Design エクステンション (ndext) C#
+      Next Design エクステンション with Extension Points (ndextp) C#
+    Uninstall Command:
+      dotnet new -u NextDesign.Extension.ProjectTemplates
+```
+
 
 ## nuget.orgへのパッケージの公開方法
 
