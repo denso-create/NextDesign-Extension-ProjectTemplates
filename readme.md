@@ -38,11 +38,15 @@ Next Design エクステンション                          ndext             
 > dotnet new ndext -n MyExt1
 ```
 
-* また、[NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/)を利用したエクステンションのプロジェクトをカレントディレクトリに作成します。
+* また、よりシンプルにエクステンションの開発が可能な、[NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/)を利用したエクステンションのプロジェクトも作成可能です。
 
 ```
 > dotnet new ndextp -n MyExt2
 ```
+
+* また、Visual Studioの新規プロジェクト作成のダイアログでも作成可能です。
+
+![](docs/images/vs2019-new-project-dialog.png)
 
 ## nuget.orgへのパッケージの公開方法
 
@@ -55,5 +59,6 @@ Next Design エクステンション                          ndext             
    * `publish.cmd`を実行して下さい。
 
 ### gihtubから公開する方法
-* tbd
+* Github Actionsで公開予定。
+
 
