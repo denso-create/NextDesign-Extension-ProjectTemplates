@@ -1,5 +1,9 @@
 # Next Design Extension Project Templates
 
+> **Notice:**
+> 本ツールはNext Design V2が対象のプレビュー公開です。
+> Next Design V1.Xでは利用できません。
+
 - [概要](#概要)
 - [リリースノート](#リリースノート)
 - [インストール方法](#インストール方法)
@@ -11,7 +15,6 @@
 
 ## 概要
 * Next Designのエクステンション開発のためのプロジェクトテンプレートです。
-* Next Design V2が対象のプレビュー公開です。Next Design V1.Xでは利用できません。
 * dotnetのCLIおよび、Visual Studioで利用できます。
 * [Nuget.orgで公開](https://www.nuget.org/packages/NextDesign.Extension.ProjectTemplates/)しています。
 * コマンドラインツール [NDExt](https://www.nuget.org/packages/NDExt/)を利用すると便利です。
