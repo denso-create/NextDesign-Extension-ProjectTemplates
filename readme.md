@@ -62,26 +62,11 @@ Next Design エクステンション                          ndext             
 ![](docs/images/vs2019-new-project-dialog.png)
 
 ## パッケージのアンインストール方法
+次のコマンドを実行して下さい。
 
 ```
-> dotnet new  --uninstall
+> dotnet new --uninstall NextDesign.Extension.ProjectTemplates
 ```
-
-と実行すると、下記のように表示されます。`Uninstall Command`で記載されているコマンドを実行して下さい。
-
-```
-  NextDesign.Extension.ProjectTemplates
-    Details:
-      NuGetPackageId: NextDesign.Extension.ProjectTemplates
-      Version: 0.6.7
-      Author: DENSO CREATE INC.
-    Templates:
-      Next Design エクステンション (ndext) C#
-      Next Design エクステンション with Extension Points (ndextp) C#
-    Uninstall Command:
-      dotnet new -u NextDesign.Extension.ProjectTemplates
-```
-
 
 ## nuget.orgへのパッケージの公開方法
 
