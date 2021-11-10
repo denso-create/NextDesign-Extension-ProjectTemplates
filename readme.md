@@ -11,12 +11,14 @@
 
 ## 概要
 * Next Designのエクステンション開発のためのプロジェクトテンプレートです。
+* Next Design V2が対象のプレビュー公開です。Next Design V1.Xでは利用できません。
 * dotnetのCLIおよび、Visual Studioで利用できます。
 * [Nuget.orgで公開](https://www.nuget.org/packages/NextDesign.Extension.ProjectTemplates/)しています。
 * コマンドラインツール [NDExt](https://www.nuget.org/packages/NDExt/)を利用すると便利です。
 
 ## リリースノート
 * バージョンごとの変更点については、[リリースノート](releasenotes.md)を参照して下さい。
+  
 ## インストール方法
 * コマンドプロンプトより次のように実行して下さい。
 
@@ -70,13 +72,13 @@ Next Design エクステンション                          ndext             
 
 ## nuget.orgへのパッケージの公開方法
 
-
 ### ローカルから公開する方法
 1. 事前準備
    * nuget.orgで `densocreate`の組織に所属するアカウントを登録して下さい。
    * nuget.orgの管理ページからApiキーを取得し、環境変数 `NUGET_APIKEY` をセットして下さい。
 2. 公開
    * `publish.cmd`を実行して下さい。
+
 ### Github Actionsによる公開
 * [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)を用いて下さい。
 
