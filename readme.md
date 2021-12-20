@@ -42,7 +42,7 @@ Templates                                     Short Name           Language    T
 --------------------------------------------  -------------------  ----------  ----------------------
 Console Application                           console              [C#],F#,VB  Common/Console
 ...
-Next Design エクステンション with Extension Points    ndextp               [C#]        Next Design
+Next Design Extension with Extension Points    ndextp               [C#]        Next Design
 Next Design エクステンション                          ndext                [C#]        Next Design
 ...
 

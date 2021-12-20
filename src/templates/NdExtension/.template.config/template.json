@@ -3,7 +3,7 @@
     "classifications": [ "Next Design"],
     "identity": "NextDesign.Extension.ProjectTemplates.Extension",
     "groupIdentity":"NextDesign.Extensions",
-    "name": "Next Design エクステンション",
+    "name": "Next Design Extension",
     "shortName": "ndext",
     "sourceName": "NdExtension",     
     "defaultName": "NdExt1",
