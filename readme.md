@@ -2,13 +2,11 @@
 
 - [概要](#概要)
 - [リリースノート](#リリースノート)
-- [ライセンス](#ライセンス)
-- [インストール方法](#インストール方法)
 - [利用方法](#利用方法)
-- [パッケージのアンインストール方法](#パッケージのアンインストール方法)
 - [nuget.orgへのパッケージの公開方法](#nugetorgへのパッケージの公開方法)
   - [ローカルから公開する方法](#ローカルから公開する方法)
   - [Github Actionsによる公開](#github-actionsによる公開)
+- [ライセンス](#ライセンス)
 
 ## 概要
 * Next Designのエクステンション開発のためのプロジェクトテンプレートです。
@@ -22,60 +20,8 @@
 ## リリースノート
 * バージョンごとの変更点については、[リリースノート](releasenotes.md)を参照して下さい。
 
-## ライセンス
-本ライブラリはMITライセンスです。詳細は[LICENSE](./LICENSE) を確認してください。
-
-## インストール方法
-* コマンドプロンプトより次のように実行して下さい。
-
-```
-> dotnet new --install NextDesign.Extension.ProjectTemplates
-```
-
-正常にインストールが完了している場合は次のコマンドを実行すると
-
-```
-> dotnet new 
-```
-
-このように表示されます。
-
-```
-Templates                                     Short Name           Language    Tags
---------------------------------------------  -------------------  ----------  ----------------------
-Console Application                           console              [C#],F#,VB  Common/Console
-...
-Next Design Extension with Extension Points    ndextp               [C#]        Next Design
-Next Design エクステンション                          ndext                [C#]        Next Design
-...
-
-```
-
 ## 利用方法
-
-* 次のように実行するとエクステンションのプロジェクトを作成できます。
-
-```
-> dotnet new ndext -n MyExt1
-```
-
-* また、よりシンプルにエクステンションの開発が可能な、[NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/)を利用したエクステンションのプロジェクトも作成可能です。
-
-```
-> dotnet new ndextp -n MyExt2
-```
-
-* また、Visual Studioの新規プロジェクト作成のダイアログでも作成可能です。
-
-![](docs/images/vs2019-new-project-dialog.png)
-
-## パッケージのアンインストール方法
-次のコマンドを実行して下さい。
-
-```
-> dotnet new --uninstall NextDesign.Extension.ProjectTemplates
-```
-
+こちらの[readme](src/readme.md)を参照して下さい。
 ## nuget.orgへのパッケージの公開方法
 
 ### ローカルから公開する方法
@@ -89,3 +35,5 @@ Next Design エクステンション                          ndext             
 * [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)を用いて下さい。
 
 
+## ライセンス
+本ライブラリはMITライセンスです。詳細は[LICENSE](./LICENSE) を確認してください。
