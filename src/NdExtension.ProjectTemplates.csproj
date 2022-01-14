@@ -18,7 +18,7 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/denso-create/NextDesign-Extension-ProjectTemplates</PackageProjectUrl>
     <RepositoryUrl>https://github.com/denso-create/NextDesign-Extension-ProjectTemplates</RepositoryUrl>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
