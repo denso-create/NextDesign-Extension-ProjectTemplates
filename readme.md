@@ -1,8 +1,17 @@
 # Next Design Extension Project Templates
 
+- [概要](#概要)
+- [リリースノート](#リリースノート)
+- [インストール方法](#インストール方法)
+- [利用方法](#利用方法)
+- [パッケージのアンインストール方法](#パッケージのアンインストール方法)
+- [nuget.orgへのパッケージの公開方法](#nugetorgへのパッケージの公開方法)
+  - [ローカルから公開する方法](#ローカルから公開する方法)
+  - [Github Actionsによる公開](#github-actionsによる公開)
+- [License](#license)
+
 > **Notice:**
-> 本ツールはNext Design V2が対象のプレビュー公開です。
-> Next Design V1.Xでは利用できません。
+> 本ライブラリはNext Design V2が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
 
 - [概要](#概要)
 - [リリースノート](#リリースノート)
@@ -12,6 +21,7 @@
 - [nuget.orgへのパッケージの公開方法](#nugetorgへのパッケージの公開方法)
   - [ローカルから公開する方法](#ローカルから公開する方法)
   - [Github Actionsによる公開](#github-actionsによる公開)
+- [License](#license)
 
 ## 概要
 * Next Designのエクステンション開発のためのプロジェクトテンプレートです。
@@ -86,3 +96,6 @@ Next Design エクステンション                          ndext             
 * [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)を用いて下さい。
 
 
+## License
+Libraries in this repository are licensed under the Apache 2.0 License.
+See [LICENSE](./LICENSE) for more information.
