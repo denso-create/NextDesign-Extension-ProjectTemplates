@@ -8,7 +8,7 @@
   "shortName": "ndextp",
   "sourceName": "NdExtension",
   "defaultName": "NdExt1",
-  "icon": "NextDesign.png",
+  "icon": "icon.png",
   "description": "Extension Pointsライブラリを利用したNext Designのエクステンションのプロジェクトテンプレートです。",
   "tags": {
     "language": "C#",
