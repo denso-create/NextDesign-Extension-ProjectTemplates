@@ -22,6 +22,7 @@
 
 ## 利用方法
 こちらの[readme](src/readme.md)を参照して下さい。
+また、[こちらにドキュメントを公開](https://docs.nextdesign.app/extension/docs/libs/ProjectTemplates/intro)しています。
 ## nuget.orgへのパッケージの公開方法
 
 ### ローカルから公開する方法
