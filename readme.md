@@ -23,13 +23,15 @@
 
 ## 利用方法
 インストールすると、Visual Studioで次のようにプロジェクトテンプレートを選択できるようになります。
-![](images/vs2019-new-project-dialog.png)
+
+![](images/vs2022-new-project-dialog.png)
 
 インストール方法はこちらの[readme](src/readme.md)を参照して下さい。
 
 また、[エクステンション開発者向けのドキュメントでも公開](https://docs.nextdesign.app/extension/docs/libs/ProjectTemplates/intro)しています。
 
-
+> **Notice:**
+> Visual Studio 2019と2022の両方の環境をインストールした場合は、Visual Studio 2022でのみプロジェクトテンプレートが表示されるようになります。
 
 ## テンプレートの開発
 プロジェクトテンプレートについては次の記事を参考にして下さい。
