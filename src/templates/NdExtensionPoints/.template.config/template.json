@@ -1,24 +1,34 @@
 {
-    "$schema": "http://json.schemastore.org/template",
-    "classifications": [ "Next Design"],
-    "identity": "NextDesign.Extension.ProjectTemplates.ExtensionPoints",
-    "groupIdentity":"NextDesign.Extensions.ExtensionPoints",
-    "name": "Next Design Extension (Extension Points)",
-    "shortName": "ndextp",
-    "sourceName": "NdExtension",
-    "defaultName": "NdExt1",
-    "icon": "NextDesign.png",
-    "description": "Extension Pointsライブラリを利用したNext Designのエクステンションのプロジェクトテンプレートです。",
-    "tags": {
-      "language": "C#",
-      "type": "project"
-    },
-    
-    "symbols": {
-      "ndVer": {
-          "type": "parameter",
-          "replaces": "1.3.11.11001",
-          "defaultValue": "1.3.11.11001"
+  "$schema": "http://json.schemastore.org/template",
+  "author": "DENSO CREATE",
+  "classifications": [ "Next Design"],
+  "identity": "NextDesign.Extension.ProjectTemplates.ExtensionPoints",
+  "groupIdentity":"NextDesign.Extensions.ExtensionPoints",
+  "name": "Next Design Extension (Extension Points)",
+  "shortName": "ndextp",
+  "sourceName": "NdExtension",
+  "defaultName": "NdExt1",
+  "icon": "NextDesign.png",
+  "description": "Extension Pointsライブラリを利用したNext Designのエクステンションのプロジェクトテンプレートです。",
+  "tags": {
+    "language": "C#",
+    "type": "project",
+    "vs_showParametersByDefault": "true"
+  },
+  
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+      {
+          "choice": "netcoreapp3.1",
+          "description": "Target netcoreapp3.1"
       }
+      ],
+      "replaces": "netcoreapp3.1",
+      "defaultValue": "netcoreapp3.1"
+    }
   }
 }

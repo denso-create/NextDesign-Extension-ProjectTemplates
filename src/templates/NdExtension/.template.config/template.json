@@ -1,6 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/template",
     "classifications": [ "Next Design"],
+    "author": "DENSO CREATE",
     "identity": "NextDesign.Extension.ProjectTemplates.Extension",
     "groupIdentity":"NextDesign.Extensions",
     "name": "Next Design Extension",
@@ -11,13 +12,22 @@
     "description": "Next Designのエクステンションのプロジェクトテンプレートです。",
     "tags": {
       "language": "C#",
-      "type": "project"
+      "type": "project",
+      "vs_showParametersByDefault": "true"
     },
     "symbols": {
-      "ndVer": {
-          "type": "parameter",
-          "replaces": "1.3.11.11001",
-          "defaultValue": "1.3.11.11001"
+      "Framework": {
+        "type": "parameter",
+        "description": "The target framework for the project.",
+        "datatype": "choice",
+        "choices": [
+        {
+            "choice": "netcoreapp3.1",
+            "description": "Target netcoreapp3.1"
+        }
+        ],
+        "replaces": "netcoreapp3.1",
+        "defaultValue": "netcoreapp3.1"
       }
     }
 }
