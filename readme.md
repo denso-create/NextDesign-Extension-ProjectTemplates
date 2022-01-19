@@ -3,6 +3,7 @@
 - [概要](#概要)
 - [リリースノート](#リリースノート)
 - [利用方法](#利用方法)
+- [テンプレートの開発](#テンプレートの開発)
 - [nuget.orgへのパッケージの公開方法](#nugetorgへのパッケージの公開方法)
   - [ローカルから公開する方法](#ローカルから公開する方法)
   - [Github Actionsによる公開](#github-actionsによる公開)
@@ -21,8 +22,22 @@
 * バージョンごとの変更点については、[リリースノート](releasenotes.md)を参照して下さい。
 
 ## 利用方法
-こちらの[readme](src/readme.md)を参照して下さい。
-また、[こちらにドキュメントを公開](https://docs.nextdesign.app/extension/docs/libs/ProjectTemplates/intro)しています。
+インストールすると、Visual Studioで次のようにプロジェクトテンプレートを選択できるようになります。
+![](images/vs2019-new-project-dialog.png)
+
+インストール方法はこちらの[readme](src/readme.md)を参照して下さい。
+
+また、[エクステンション開発者向けのドキュメントでも公開](https://docs.nextdesign.app/extension/docs/libs/ProjectTemplates/intro)しています。
+
+
+
+## テンプレートの開発
+プロジェクトテンプレートについては次の記事を参考にして下さい。
+* [dotnet new のカスタム テンプレート](https://docs.microsoft.com/ja-jp/dotnet/core/tools/custom-templates)
+* [.NET CLI Templates in Visual Studio](https://devblogs.microsoft.com/dotnet/net-cli-templates-in-visual-studio/)
+* [how to create templates that work in dotnet new and Visual Studio/Visual Studio for Mac](https://github.com/sayedihashimi/template-sample)
+* [How do I ship multiple `dotnet new` templates inside a single NuGet package?])https://stackoverflow.com/questions/58325232/how-do-i-ship-multiple-dotnet-new-templates-inside-a-single-nuget-package)
+
 ## nuget.orgへのパッケージの公開方法
 
 ### ローカルから公開する方法
