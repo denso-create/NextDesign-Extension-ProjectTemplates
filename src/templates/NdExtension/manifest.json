@@ -32,7 +32,7 @@
 							"controls": [
 								{
 									"id": "NdExtension.HelloButton",
-									"type": "button",
+									"type": "Button",
 									"label": "Hello",
 									"command": "NdExtension.HelloCommand"
 								}
