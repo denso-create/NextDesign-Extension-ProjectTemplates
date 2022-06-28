@@ -9,9 +9,7 @@
     <Authors>Me</Authors>
     <Company>Me</Company>
     <Product>NdExtension</Product>
-    <Description>NdExtensionのタイトル
-ここからNdExtensionの説明を記載して下さい。
-</Description>
+    <Description>NdExtensionの説明です。</Description>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <AssemblyName>NdExtension</AssemblyName>
     <RootNamespace>NdExtension</RootNamespace>
