@@ -1,4 +1,7 @@
-# NDExt Release Notes
+#  Next Design Extension Project Templates Release Notes
+
+## 1.1.0
+* Next Design V2.0 Service Update1で`title`タグ利用の廃止に連動し、説明の１行目がタイトルである記載を削除。
 
 ## 1.0.2
 * Visual Studio 2019/2022での検証
