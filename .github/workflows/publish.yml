@@ -1,7 +1,9 @@
 name: publish to nuget.org
 on:
-  workflow_dispatch:
-
+  push:
+    branches:
+      - publish
+      
 jobs:
   publish:
     runs-on: ubuntu-latest
