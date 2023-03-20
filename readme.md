@@ -16,7 +16,7 @@
 * コマンドラインツール [NDExt](https://www.nuget.org/packages/NDExt/)を利用すると便利です。
 
 > **Notice:**
-> 本ライブラリはNext Design V2が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
+> 本ライブラリはNext Design V2以降が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
 
 ## リリースノート
 * バージョンごとの変更点については、[リリースノート](releasenotes.md)を参照して下さい。
