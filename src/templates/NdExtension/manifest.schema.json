@@ -101,6 +101,22 @@
           }
         }
       }
+    },
+    "runtime": {
+      "type": "object",
+      "properties": {
+        "sharedAssemblies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "required": [ "name", "main", "lifecycle" ],
