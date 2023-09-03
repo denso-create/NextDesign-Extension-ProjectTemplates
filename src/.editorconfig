@@ -1,0 +1,396 @@
+# ----------------------------------------------------------------------------------------------------------------------
+# エディタコンフィグ
+#
+# 2021/2/11 山下 ReSharperから生成。charsetを指定
+# 2021/4/15 山下 MSDNと突き合わせて設定見直し。
+# 2023/4/30 山下 ExtFwの設定をIndioに流用。
+#                CS3021を無効化。
+# 2023/9/1  山下 全リポジトリに適用するためコード分析のXMLコメント関係を無効化(ビルドエラーになってしまうため)。
+
+# 参考
+# MSDN「コードスタイルルールのオプション」： https://docs.microsoft.com/ja-jp/dotnet/fundamentals/code-analysis/code-style-rule-options
+# Roslynの設定：https://github.com/dotnet/roslyn/blob/main/.editorconfig
+# SonarDotNetの設定：https://github.com/SonarSource/sonar-dotnet/blob/master/.editorconfig
+# ----------------------------------------------------------------------------------------------------------------------
+
+# このファイルをルートとし、上位フォルダに設定ファイルが存在していても引き継がない
+root = true
+
+# ----------------------------------------------------------------------------------------------------------------------
+# General settings
+# ----------------------------------------------------------------------------------------------------------------------
+
+# インデントはスペースで統一
+[*]
+indent_style = space
+indent_size =4
+
+# C# files
+[*.cs]
+
+# BOMつきUTF-8に統一する
+charset = utf-8-bom
+
+# 改行コードはCRLFに統一
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = true
+
+# Xml project files
+[*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
+indent_style = space
+indent_size = 2
+
+# Xml config files
+[*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
+indent_size = 2
+
+# JSON and YML files
+[*.{json,yml,yaml}]
+indent_size = 2
+
+
+
+# ----------------------------------------------------------------------------------------------------------------------
+# Coding styles
+# ----------------------------------------------------------------------------------------------------------------------
+[*.{cs,vb}]
+
+# 未使用のイベントがあっても無視
+# イベントを含むinterfaceを実装すると消せないwarning
+dotnet_diagnostic.cs0067.severity = none
+
+# System.* の using を先に記述＆ソート
+dotnet_sort_system_directives_first = true
+
+# MSDN「言語規則」の記述順に設定
+# https://docs.microsoft.com/ja-jp/dotnet/fundamentals/code-analysis/style-rules/language-rules
+
+# "this." の明示は不要
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_qualification_for_event = false:suggestion
+
+# 型参照のフレームワーク型名（Int32など）の代わりに言語キーワード（intなど）を使用
+dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
+dotnet_style_predefined_type_for_member_access = true:suggestion
+
+# パブリック インターフェイス メンバーの場合を除き、アクセシビリティ修飾子を宣言
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggestion
+
+# Suggest more modern language features when available
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_prefer_auto_properties = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
+dotnet_style_prefer_conditional_expression_over_return = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:suggestion
+
+# Parentheses
+#dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary:none
+#dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary:none
+#dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary:none
+dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:suggestion
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+
+
+[*.cs]
+
+
+#when this rule is set to a list of modifiers, prefer the specified ordering.
+csharp_preferred_modifier_order = public, private, protected, internal, new, abstract, virtual, sealed, override, static, readonly, extern, unsafe, volatile, async:warning
+
+# コード ブロックを囲む中かっこ { } は使用しません (許可されている場合)
+csharp_prefer_braces = false:suggestion
+
+# どこでも "var" を使用する
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_style_var_elsewhere = true:suggestion
+
+# 式本体を使用する
+csharp_style_expression_bodied_methods = true:suggestion
+csharp_style_expression_bodied_constructors = true:silent
+csharp_style_expression_bodied_operators = true:suggestion
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
+csharp_style_expression_bodied_lambdas = true:suggestion
+csharp_style_expression_bodied_local_functions = true:suggestion
+
+# 単一行になる場合は、メソッドに式本体を使用
+csharp_style_expression_bodied_methods = when_on_single_line:suggestion
+csharp_style_expression_bodied_constructors = false:suggestion
+csharp_style_expression_bodied_operators = true:suggestion
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
+csharp_style_expression_bodied_lambdas = true:suggestion
+csharp_style_expression_bodied_local_functions = true:suggestion
+
+# Suggest more modern language features when available
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_throw_expression = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
+
+# MSDN「書式設定規則」の記述順に設定
+# https://docs.microsoft.com/ja-jp/dotnet/fundamentals/code-analysis/style-rules/formatting-rules
+
+# 改行オプション
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = false
+csharp_new_line_before_members_in_anonymous_types = false
+csharp_new_line_between_query_expression_clauses = true
+
+# インデントオプション
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_indent_labels = flush_left
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents_when_block = true
+
+# スペースオプション
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+#csharp_space_between_parentheses = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+# Extra space before equals sign DOES MATTER https://github.com/dotnet/roslyn/issues/20355
+csharp_space_around_binary_operators  = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+
+csharp_space_after_comma = true
+csharp_space_before_comma = false
+csharp_space_after_dot = false
+csharp_space_before_dot = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = do_not_ignore
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_square_brackets = false
+
+# 折り返しオプション
+# 1 行に複数のステートメントとメンバー宣言を表示します
+csharp_preserve_single_line_statements = true
+# コード ブロックを単一行に配置します
+csharp_preserve_single_line_blocks = true
+
+# usingディレクティブオプション
+csharp_using_directive_placement = false
+
+
+# ----------------------------------------------------------------------------------------------------------------------
+# Naming conventions
+# ----------------------------------------------------------------------------------------------------------------------
+
+# 名前付け規則
+# https://docs.microsoft.com/ja-jp/dotnet/fundamentals/code-analysis/style-rules/naming-rules
+
+# 命名規則
+
+# interface
+dotnet_naming_rule.interface_must_start_with_I.severity = warning
+dotnet_naming_rule.interface_must_start_with_I.symbols = interface_types
+dotnet_naming_rule.interface_must_start_with_I.style = I_style
+
+# 変数
+dotnet_naming_rule.variables_must_be_camel_style.severity = warning
+dotnet_naming_rule.variables_must_be_camel_style.symbols = parameter_types
+dotnet_naming_rule.variables_must_be_camel_style.style = camel_style
+
+# 型名
+dotnet_naming_rule.types_should_be_pascal_case.severity = warning
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+# プロパティ、イベント、メソッド
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = warning
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+# const
+dotnet_naming_rule.constants_must_start_with_c_.severity = warning
+dotnet_naming_rule.constants_must_start_with_c_.style = c_upper_camel_case_style
+dotnet_naming_rule.constants_must_start_with_c_.symbols = constants_symbols
+
+# static field
+dotnet_naming_rule.static_fields_must_start_with_s_.severity = warning
+dotnet_naming_rule.static_fields_must_start_with_s_.style = s_upper_camel_case_style
+dotnet_naming_rule.static_fields_must_start_with_s_.symbols = static_fields_symbols
+
+# instance field
+dotnet_naming_rule.instance_fields_must_start_with_m_.severity = warning
+dotnet_naming_rule.instance_fields_must_start_with_m_.style = m_upper_camel_case_style
+dotnet_naming_rule.instance_fields_must_start_with_m_.symbols = instance_fields_symbols
+
+# シンボル定義
+
+dotnet_naming_symbols.interface_types.applicable_kinds = interface
+dotnet_naming_symbols.interface_types.applicable_accessibilities = *
+
+dotnet_naming_symbols.parameter_types.applicable_kinds = parameter
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+
+dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+
+dotnet_naming_symbols.constants_symbols.applicable_kinds = field
+dotnet_naming_symbols.constants_symbols.required_modifiers = const
+dotnet_naming_symbols.constants_symbols.applicable_accessibilities = *
+
+dotnet_naming_symbols.static_fields_symbols.applicable_kinds = field
+dotnet_naming_symbols.static_fields_symbols.required_modifiers = static
+dotnet_naming_symbols.static_fields_symbols.applicable_accessibilities = *
+
+dotnet_naming_symbols.instance_fields_symbols.applicable_kinds = field
+dotnet_naming_symbols.instance_fields_symbols.applicable_accessibilities = *
+
+# 命名スタイル
+
+dotnet_naming_style.I_style.required_prefix = I
+dotnet_naming_style.I_style.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.camel_style.capitalization = camel_case
+
+dotnet_naming_style.c_upper_camel_case_style.capitalization = pascal_case
+dotnet_naming_style.c_upper_camel_case_style.required_prefix = c_
+
+dotnet_naming_style.m_upper_camel_case_style.capitalization = pascal_case
+dotnet_naming_style.m_upper_camel_case_style.required_prefix = m_
+
+dotnet_naming_style.s_upper_camel_case_style.capitalization = pascal_case
+dotnet_naming_style.s_upper_camel_case_style.required_prefix = s_
+
+
+# ----------------------------------------------------------------------------------------------------------------------
+# コード分析
+# ----------------------------------------------------------------------------------------------------------------------
+
+# dotnet_diagnostic.cs1570.severity = error       # XMLコメント内の無効なXML
+# dotnet_diagnostic.cs1571.severity = error       # XMLコメント内の重複するparamタグ
+# dotnet_diagnostic.cs1572.severity = error       # XMLコメントに ' パラメーター ' の 'param' タグがありますが、その名前のパラメーターはありません 
+# dotnet_diagnostic.cs1573.severity = error       # パラメーターにXMLコメントに一致するパラメータータグがありません
+# dotnet_diagnostic.cs1574.severity = error       # XMLコメントのあいまいな参照
+# dotnet_diagnostic.cs1580.severity = error       # XMLコメントのあいまいな参照
+# dotnet_diagnostic.cs1581.severity = error       # XMLコメントのあいまいな参照
+# dotnet_diagnostic.cs1584.severity = error       # XMLコメントのあいまいな参照
+# dotnet_diagnostic.cs1587.severity = error       # XML コメントが有効な言語要素に配置されていない
+# dotnet_diagnostic.cs1589.severity = error       # XMLフラグメントを含めることができません
+# dotnet_diagnostic.cs1590.severity = error       # 無効なXMLのinclude要素 
+# dotnet_diagnostic.cs1591.severity = error       # 公開されているタイプまたはメンバーの XML コメントが見つかりません
+# dotnet_diagnostic.cs1592.severity = error       # コメントファイルに不正な形式のXML
+# dotnet_diagnostic.cs1710.severity = error       # XMLコメント内の重複するtypeparamタグ
+# dotnet_diagnostic.cs1711.severity = error       # XMLコメントに 'TypeParameter' の 'typeparam' タグがありますが、その名前の型パラメーターはありません 
+# dotnet_diagnostic.cs1712.severity = error       # 型パラメーターには、XML コメント内に一致する typeparam タグがありません
+# dotnet_diagnostic.cs1723.severity = error       # XMLコメントには、型パラメーターを参照する cref 属性があります
+
+# ----------------------------------------------------------------------------------------------------------------------
+# ReSarper settings
+# ----------------------------------------------------------------------------------------------------------------------
+
+# ReSharper properties
+resharper_alignment_tab_fill_style = use_tabs_only
+resharper_align_linq_query = true
+resharper_align_multiline_calls_chain = true
+resharper_align_multiline_extends_list = true
+resharper_braces_for_dowhile = required
+resharper_braces_for_fixed = required
+resharper_braces_for_for = not_required
+resharper_braces_for_foreach = not_required
+resharper_braces_for_ifelse = not_required_for_both
+resharper_braces_for_lock = required
+resharper_braces_for_using = required
+resharper_braces_for_while = not_required
+resharper_braces_redundant = true
+resharper_constructor_or_destructor_body = expression_body
+resharper_csharp_align_multiline_parameter = true
+resharper_csharp_keep_blank_lines_in_code = 1
+resharper_csharp_keep_blank_lines_in_declarations = 1
+resharper_csharp_naming_rule.constants = c_ + AaBb
+resharper_csharp_naming_rule.private_constants = c_ + AaBb
+resharper_csharp_naming_rule.private_instance_fields = m_ + AaBb
+resharper_csharp_naming_rule.private_static_fields = s_ + AaBb
+resharper_csharp_naming_rule.private_static_readonly = s_ + AaBb
+resharper_csharp_naming_rule.static_readonly = s_ + AaBb
+resharper_csharp_stick_comment = false
+resharper_csharp_wrap_lines = false
+resharper_int_align_comments = true
+resharper_int_align_switch_expressions = true
+resharper_int_align_switch_sections = true
+resharper_keep_existing_enum_arrangement = false
+resharper_local_function_body = expression_body
+resharper_method_or_operator_body = expression_body
+resharper_place_accessorholder_attribute_on_same_line = false
+resharper_place_constructor_initializer_on_same_line = false
+resharper_place_simple_embedded_statement_on_same_line = true
+resharper_space_before_fixed_parentheses = false
+resharper_space_before_lock_parentheses = false
+resharper_use_heuristics_for_body_style = true
+resharper_wrap_array_initializer_style = chop_always
+resharper_wrap_linq_expressions = chop_always
+resharper_wrap_multiple_type_parameter_constraints_style = chop_always
+resharper_wrap_object_and_collection_initializer_style = chop_always
+resharper_xmldoc_indent_text = ZeroIndent
+
+# ReSharper inspection severities
+resharper_arrange_constructor_or_destructor_body_highlighting = none
+resharper_arrange_method_or_operator_body_highlighting = none
+resharper_arrange_redundant_parentheses_highlighting = hint
+resharper_arrange_this_qualifier_highlighting = hint
+resharper_arrange_type_member_modifiers_highlighting = hint
+resharper_arrange_type_modifiers_highlighting = hint
+resharper_built_in_type_reference_style_for_member_access_highlighting = hint
+resharper_built_in_type_reference_style_highlighting = hint
+resharper_c_sharp_warnings_cs1574_highlighting = warning
+resharper_enforce_do_while_statement_braces_highlighting = none
+resharper_enforce_fixed_statement_braces_highlighting = none
+resharper_enforce_foreach_statement_braces_highlighting = none
+resharper_enforce_for_statement_braces_highlighting = none
+resharper_enforce_if_statement_braces_highlighting = none
+resharper_enforce_lock_statement_braces_highlighting = none
+resharper_enforce_using_statement_braces_highlighting = none
+resharper_enforce_while_statement_braces_highlighting = none
+resharper_invalid_xml_doc_comment_highlighting = error
+resharper_redundant_base_qualifier_highlighting = warning
+resharper_remove_redundant_braces_highlighting = none
+resharper_suggest_var_or_type_built_in_types_highlighting = hint
+resharper_suggest_var_or_type_elsewhere_highlighting = hint
+resharper_suggest_var_or_type_simple_types_highlighting = hint
+
+# 非公開または内部型またはメンバーの XML コメントがありません
+#resharper_internal_or_private_member_not_documented_highlighting = warning
+
+# アセンブリにCLISCompliantを指定していないため、クラスやメソッドに指定するとビルド時にワーニングになってしまう
+dotnet_diagnostic.cs3021.severity = none       # アセンブリには属性 CLSCompliant がないため属性 CLSCompliant は不要です
