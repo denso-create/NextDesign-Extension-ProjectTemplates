@@ -9,7 +9,7 @@
 * コマンドプロンプトより次のように実行して下さい。
 
 ```
-> dotnet new --install NextDesign.Extension.ProjectTemplates
+> dotnet new install NextDesign.Extension.ProjectTemplates
 ```
 
 正常にインストールが完了している場合は次のコマンドを実行すると
@@ -52,7 +52,7 @@ Next Design エクステンション                          ndext             
 次のコマンドを実行して下さい。
 
 ```
-> dotnet new --uninstall NextDesign.Extension.ProjectTemplates
+> dotnet new uninstall NextDesign.Extension.ProjectTemplates
 ```
 
 ## ライセンス
