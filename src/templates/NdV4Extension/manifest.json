@@ -1,0 +1,49 @@
+{
+	"$schema": "manifest.schema.json",
+
+	"name": "NdExtension", // TODO ここはすべてのエクステンションでユニークになるようにして下さい。
+	"main": "NdExtension.dll", // TODO ここはプロジェクトのアセンブリファイル名と同じにしてください。
+	
+	"lifecycle": "application",
+
+	"extensionPoints": {
+
+		"commands": [
+			{
+				"id": "NdExtension.HelloCommand",
+				"execFunc": "SayHello"
+			}
+		],
+
+		"events": {
+		},
+
+		"ribbon": {
+			"tabs": [
+				{
+					"id": "NdExtension.HelloTab",
+					"label": "Hello",
+
+					"groups": [
+						{
+							"id": "NdExtension.Group1",
+							"label": "Group1",
+
+							"controls": [
+								{
+									"id": "NdExtension.HelloButton",
+									"type": "Button",
+									"label": "Hello",
+									"command": "NdExtension.HelloCommand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+
+
+	}
+
+}
