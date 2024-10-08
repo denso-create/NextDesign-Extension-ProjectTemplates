@@ -3,7 +3,7 @@
 * dotnetのCLIおよび、Visual Studioで利用できます。
 
 > **Notice:**
-> 本ライブラリはNext Design V2が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
+> 本ライブラリはNext Design V2以降が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
 
 ## インストール方法
 * コマンドプロンプトより次のように実行して下さい。
@@ -21,28 +21,29 @@
 このように表示されます。
 
 ```
-Templates                                     Short Name           Language    Tags
---------------------------------------------  -------------------  ----------  ----------------------
-Console Application                           console              [C#],F#,VB  Common/Console
+テンプレート名                                 短い名前  言語  タグ
+---------------------------------------------  --------  ----  -----------
 ...
-Next Design Extension with Extension Points    ndextp               [C#]        Next Design
-Next Design エクステンション                          ndext                [C#]        Next Design
+Next Design V3.1 Extension                     nd31ext   [C#]  Next Design
+Next Design V3.1 Extension (Extension Points)  nd31extp  [C#]  Next Design
+Next Design V4.0 Extension                     nd4ext    [C#]  Next Design
+Next Design V4.0 Extension (Extension Points)  nd4extp   [C#]  Next Design
 ...
 
 ```
 
 ## 利用方法
 
-* 次のように実行するとエクステンションのプロジェクトを作成できます。
+* 次のように実行するとNext Design V4.0向けのエクステンションのプロジェクトを作成できます。（V3.1向けのプロジェクトを作成する際は「nd4ext」を「nd31ext」に変更してください）
 
 ```
-> dotnet new ndext -n MyExt1
+> dotnet new nd4ext -n MyExt1
 ```
 
-* また、よりシンプルにエクステンションの開発が可能な、[NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/)を利用したエクステンションのプロジェクトも作成可能です。
+* また、よりシンプルにエクステンションの開発が可能な、[NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/)を利用したエクステンションのプロジェクトも作成可能です。（V3.1向けのプロジェクトを作成する際は「nd4extp」を「nd31extp」に変更してください）
 
 ```
-> dotnet new ndextp -n MyExt2
+> dotnet new nd4extp -n MyExt2
 ```
 
 * また、Visual Studioの新規プロジェクト作成のダイアログでも作成可能です。
