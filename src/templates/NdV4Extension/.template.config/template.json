@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "classifications": [ "Next Design" ],
   "author": "DENSO CREATE",
+  "classifications": [ "Next Design" ],
   "identity": "NextDesign.Extension.ProjectTemplates.Extension.V4",
   "groupIdentity": "NextDesign.Extensions.V4",
   "name": "Next Design V4.0 Extension",
