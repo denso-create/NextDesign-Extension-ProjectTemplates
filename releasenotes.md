@@ -1,5 +1,12 @@
 #  Next Design Extension Project Templates Release Notes
 
+## 1.3.0
+* V3.1向けとV4.0向けの両方のプロジェクトテンプレートをインストールできるように修正。
+* Next Designの対象バージョンに応じたパッケージが参照されるように、参照バージョンの指定方法を変更。
+
+## 1.2.0
+* デフォルトのターゲットフレームワークをNET6に変更。
+
 ## 1.1.0
 * Next Design V2.0 Service Update1で`title`タグ利用の廃止に連動し、説明の１行目がタイトルである記載を削除。
 
