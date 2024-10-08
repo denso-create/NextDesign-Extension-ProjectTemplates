@@ -1,21 +1,21 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "DENSO CREATE",
-  "classifications": [ "Next Design"],
-  "identity": "NextDesign.Extension.ProjectTemplates.ExtensionPoints",
-  "groupIdentity":"NextDesign.Extensions.ExtensionPoints",
-  "name": "Next Design V4 Extension (Extension Points)",
+  "classifications": [ "Next Design" ],
+  "identity": "NextDesign.Extension.ProjectTemplates.ExtensionPoints.V4",
+  "groupIdentity": "NextDesign.Extensions.ExtensionPoints.V4",
+  "name": "Next Design V4.0 Extension (Extension Points)",
   "shortName": "nd4extp",
   "sourceName": "NdExtension",
   "defaultName": "NdExt1",
   "icon": "icon.png",
-  "description": "Extension Pointsライブラリを利用したNext Design V4向けのエクステンションのプロジェクトテンプレートです。",
+  "description": "Extension Pointsライブラリを利用したNext Design V4.0向けのエクステンションのプロジェクトテンプレートです。",
   "tags": {
     "language": "C#",
     "type": "project",
     "vs_showParametersByDefault": "true"
   },
-  
+
   "symbols": {
     "Framework": {
       "type": "parameter",
