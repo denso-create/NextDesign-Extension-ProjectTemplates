@@ -1,0 +1,6 @@
+{
+  "$schema": "manifest.schema.json",
+  "name": "NdExtension", // TODO ここはすべてのエクステンションでユニークになるようにして下さい。
+  "main": "NdExtension.dll", // TODO ここはプロジェクトのアセンブリファイル名と同じにしてください。
+  "lifecycle": "application"
+}

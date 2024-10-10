@@ -4,7 +4,7 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <PackageId>NdExtension</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.0</Version>
     <PackageProjectUrl>https://www.your-web-here.com/</PackageProjectUrl>
     <Authors>Me</Authors>
     <Company>Me</Company>
@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NextDesign.Desktop" Version="*" />
+    <PackageReference Include="NextDesign.Desktop" Version="4.0.*" />
   </ItemGroup>
   <ItemGroup>
     <None Update="manifest.json">
