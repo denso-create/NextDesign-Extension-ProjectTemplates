@@ -557,7 +557,7 @@
         "properties": {
           "navigator": {
             "type": "string",
-            "enum": [ "modelNavigator", "profileNavigator" ]
+            "enum": ["Model","ProductLine","Scm","Project","Profile"]
           },
           "onShow": {
             "type": "string"
