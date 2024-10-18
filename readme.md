@@ -38,7 +38,7 @@
 * [dotnet new のカスタム テンプレート](https://docs.microsoft.com/ja-jp/dotnet/core/tools/custom-templates)
 * [.NET CLI Templates in Visual Studio](https://devblogs.microsoft.com/dotnet/net-cli-templates-in-visual-studio/)
 * [how to create templates that work in dotnet new and Visual Studio/Visual Studio for Mac](https://github.com/sayedihashimi/template-sample)
-* [How do I ship multiple `dotnet new` templates inside a single NuGet package?])https://stackoverflow.com/questions/58325232/how-do-i-ship-multiple-dotnet-new-templates-inside-a-single-nuget-package)
+* [How do I ship multiple `dotnet new` templates inside a single NuGet package?](https://stackoverflow.com/questions/58325232/how-do-i-ship-multiple-dotnet-new-templates-inside-a-single-nuget-package)
 
 ## nuget.orgへのパッケージの公開方法
 
@@ -51,7 +51,6 @@
 
 ### Github Actionsによる公開
 * [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)を用いて下さい。
-
 
 ## ライセンス
 本ライブラリはMITライセンスです。詳細は[LICENSE](./LICENSE) を確認してください。
