@@ -21,11 +21,11 @@
 このように表示されます。
 
 ```
-テンプレート名                                  短い名前  言語  タグ
----------------------------------------------  --------  ----  -----------
+テンプレート名                            短い名前  言語  タグ
+----------------------------------------  --------  ----  -----------
 ...
-Next Design V3.1 Extension                     nd31ext   [C#]  Next Design
-Next Design V3.1 Extension (Extension Points)  nd31extp  [C#]  Next Design
+Next Design Extension                     ndext     [C#]  Next Design
+Next Design Extension (Extension Points)  ndextp    [C#]  Next Design
 ...
 
 ```
