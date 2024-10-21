@@ -21,29 +21,26 @@
 このように表示されます。
 
 ```
-テンプレート名                                 短い名前  言語  タグ
----------------------------------------------  --------  ----  -----------
+テンプレート名                            短い名前  言語  タグ
+----------------------------------------  --------  ----  -----------
 ...
-Next Design V3.1 Extension                     nd31ext   [C#]  Next Design
-Next Design V3.1 Extension (Extension Points)  nd31extp  [C#]  Next Design
-Next Design V4.0 Extension                     nd4ext    [C#]  Next Design
-Next Design V4.0 Extension (Extension Points)  nd4extp   [C#]  Next Design
+Next Design Extension                     ndext     [C#]  Next Design
+Next Design Extension (Extension Points)  ndextp    [C#]  Next Design
 ...
 
 ```
 
 ## 利用方法
-
-* 次のように実行するとNext Design V4.0向けのエクステンションのプロジェクトを作成できます。（V3.1向けのプロジェクトを作成する際は「nd4ext」を「nd31ext」に変更してください）
-
-```
-> dotnet new nd4ext -n MyExt1
-```
-
-* また、よりシンプルにエクステンションの開発が可能な、[NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/)を利用したエクステンションのプロジェクトも作成可能です。（V3.1向けのプロジェクトを作成する際は「nd4extp」を「nd31extp」に変更してください）
+* 次のように実行するとエクステンションのプロジェクトを作成できます。
 
 ```
-> dotnet new nd4extp -n MyExt2
+> dotnet new ndext -n MyExt1
+```
+
+* また、よりシンプルにエクステンションの開発が可能な、[NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/)を利用したエクステンションのプロジェクトも作成可能です。
+
+```
+> dotnet new ndextp -n MyExt2
 ```
 
 * また、Visual Studioの新規プロジェクト作成のダイアログでも作成可能です。

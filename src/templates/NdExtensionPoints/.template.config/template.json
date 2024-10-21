@@ -2,19 +2,20 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "DENSO CREATE",
   "classifications": [ "Next Design" ],
-  "identity": "NextDesign.Extension.ProjectTemplates.Extension.V31",
-  "groupIdentity": "NextDesign.Extensions.V31",
-  "name": "Next Design V3.1 Extension",
-  "shortName": "nd31ext",
+  "identity": "NextDesign.Extension.ProjectTemplates.ExtensionPoints",
+  "groupIdentity": "NextDesign.Extensions.ExtensionPoints",
+  "name": "Next Design Extension (Extension Points)",
+  "shortName": "ndextp",
   "sourceName": "NdExtension",
   "defaultName": "NdExt1",
   "icon": "icon.png",
-  "description": "Next Design V3.1向けのエクステンションのプロジェクトテンプレートです。",
+  "description": "Extension Pointsライブラリを利用したNext Designのエクステンションのプロジェクトテンプレートです。",
   "tags": {
     "language": "C#",
     "type": "project",
     "vs_showParametersByDefault": "true"
   },
+
   "symbols": {
     "Framework": {
       "type": "parameter",

@@ -1,8 +1,8 @@
 #  Next Design Extension Project Templates Release Notes
 
-## 1.3.0
-* V3.1向けとV4.0向けの両方のプロジェクトテンプレートをインストールできるように修正。
-* Next Designの対象バージョンに応じたパッケージが参照されるように、参照バージョンの指定方法を変更。
+## 1.2.1
+* テンプレートから作成したエクステンションが Next Design V3.1 で動作するよう、参照パッケージのバージョンを直値で指定する形に変更しました。Next Design V4.0 でのみ動作するエクステンションを作成する場合は、公開されている最新の NextDesign.Desktop または NextDesign.Desktop.ExtensionPoints に参照を更新してください。
+* マニフェストスキーマの誤りを修正しました。
 
 ## 1.2.0
 * デフォルトのターゲットフレームワークをNET6に変更。
