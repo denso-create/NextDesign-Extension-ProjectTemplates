@@ -1,5 +1,8 @@
 #  Next Design Extension Project Templates Release Notes
 
+## 1.2.2
+* pkgContentsフォルダ以下に「profiles」フォルダを作成したため、ユーザが自分でフォルダを作らずにベースプロファイルを配布できるようになりました。
+
 ## 1.2.1
 * テンプレートから作成したエクステンションが Next Design V3.1 で動作するよう、参照パッケージのバージョンを直値で指定する形に変更しました。Next Design V4.0 でのみ動作するエクステンションを作成する場合は、公開されている最新の NextDesign.Desktop または NextDesign.Desktop.ExtensionPoints に参照を更新してください。
 * マニフェストスキーマの誤りを修正しました。
