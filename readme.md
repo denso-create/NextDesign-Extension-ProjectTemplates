@@ -4,6 +4,7 @@
 - [リリースノート](#リリースノート)
 - [利用方法](#利用方法)
 - [テンプレートの開発](#テンプレートの開発)
+- [パッケージの作成方法](#パッケージの作成方法) 
 - [nuget.orgへのパッケージの公開方法](#nugetorgへのパッケージの公開方法)
   - [ローカルから公開する方法](#ローカルから公開する方法)
   - [Github Actionsによる公開](#github-actionsによる公開)
@@ -39,6 +40,10 @@
 * [.NET CLI Templates in Visual Studio](https://devblogs.microsoft.com/dotnet/net-cli-templates-in-visual-studio/)
 * [how to create templates that work in dotnet new and Visual Studio/Visual Studio for Mac](https://github.com/sayedihashimi/template-sample)
 * [How do I ship multiple `dotnet new` templates inside a single NuGet package?](https://stackoverflow.com/questions/58325232/how-do-i-ship-multiple-dotnet-new-templates-inside-a-single-nuget-package)
+
+## パッケージの作成方法
+
+[こちら](https://github.com/miles-team/NextDesign/wiki/エクステンション開発プロジェクトテンプレート-パッケージ作成手順)を参照してください。
 
 ## nuget.orgへのパッケージの公開方法
 
