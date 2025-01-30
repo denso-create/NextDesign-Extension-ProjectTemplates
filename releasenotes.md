@@ -1,5 +1,8 @@
 #  Next Design Extension Project Templates Release Notes
 
+## 1.2.3
+* 作成されるプロジェクトのバージョン番号の初期値を 1.0.0 に修正しました。
+
 ## 1.2.2
 * pkgContentsフォルダ以下に「profiles」フォルダを作成したため、ユーザが自分でフォルダを作らずにベースプロファイルを配布できるようになりました。
 

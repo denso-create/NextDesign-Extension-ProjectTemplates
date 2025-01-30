@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.2.2</PackageVersion>
+    <PackageVersion>1.2.3</PackageVersion>
     <PackageId>NextDesign.Extension.ProjectTemplates</PackageId>
     <Title>Next Design Extension Templates</Title>
     <Authors>DENSO CREATE INC.</Authors>
