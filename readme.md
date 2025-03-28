@@ -47,7 +47,10 @@
 
 ## nuget.orgへのパッケージの公開方法
 
+> 原則、Github Actinsによる公開をして下さい。
+
 ### ローカルから公開する方法
+
 1. 事前準備
    * nuget.orgで `densocreate`の組織に所属するアカウントを登録して下さい。
    * nuget.orgの管理ページからApiキーを取得し、環境変数 `NUGET_APIKEY` をセットして下さい。
@@ -55,7 +58,8 @@
    * `publish.cmd`を実行して下さい。
 
 ### Github Actionsによる公開
-* [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)を用いて下さい。
+* `publish`ブランチにマージすると自動的に https://www.nuget.org/packages/NextDesign.Extension.ProjectTemplates に公開されます。
+* [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)で実行しています。
 
 ## ライセンス
 本ライブラリはMITライセンスです。詳細は[LICENSE](./LICENSE) を確認してください。
