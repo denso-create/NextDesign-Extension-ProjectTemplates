@@ -4,6 +4,7 @@
 - [リリースノート](#リリースノート)
 - [利用方法](#利用方法)
 - [テンプレートの開発](#テンプレートの開発)
+- [パッケージの作成方法](#パッケージの作成方法) 
 - [nuget.orgへのパッケージの公開方法](#nugetorgへのパッケージの公開方法)
   - [ローカルから公開する方法](#ローカルから公開する方法)
   - [Github Actionsによる公開](#github-actionsによる公開)
@@ -16,7 +17,7 @@
 * コマンドラインツール [NDExt](https://www.nuget.org/packages/NDExt/)を利用すると便利です。
 
 > **Notice:**
-> 本ライブラリはNext Design V2が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
+> 本ライブラリはNext Design V2以降が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
 
 ## リリースノート
 * バージョンごとの変更点については、[リリースノート](releasenotes.md)を参照して下さい。
@@ -38,11 +39,18 @@
 * [dotnet new のカスタム テンプレート](https://docs.microsoft.com/ja-jp/dotnet/core/tools/custom-templates)
 * [.NET CLI Templates in Visual Studio](https://devblogs.microsoft.com/dotnet/net-cli-templates-in-visual-studio/)
 * [how to create templates that work in dotnet new and Visual Studio/Visual Studio for Mac](https://github.com/sayedihashimi/template-sample)
-* [How do I ship multiple `dotnet new` templates inside a single NuGet package?])https://stackoverflow.com/questions/58325232/how-do-i-ship-multiple-dotnet-new-templates-inside-a-single-nuget-package)
+* [How do I ship multiple `dotnet new` templates inside a single NuGet package?](https://stackoverflow.com/questions/58325232/how-do-i-ship-multiple-dotnet-new-templates-inside-a-single-nuget-package)
+
+## パッケージの作成方法
+
+[こちら](https://github.com/miles-team/NextDesign/wiki/エクステンション開発プロジェクトテンプレート-パッケージ作成手順)を参照してください。
 
 ## nuget.orgへのパッケージの公開方法
 
+> 原則、Github Actinsによる公開をして下さい。
+
 ### ローカルから公開する方法
+
 1. 事前準備
    * nuget.orgで `densocreate`の組織に所属するアカウントを登録して下さい。
    * nuget.orgの管理ページからApiキーを取得し、環境変数 `NUGET_APIKEY` をセットして下さい。
@@ -50,8 +58,9 @@
    * `publish.cmd`を実行して下さい。
 
 ### Github Actionsによる公開
-* [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)を用いて下さい。
-
+* `publish`ブランチにマージすると自動的に https://www.nuget.org/packages/NextDesign.Extension.ProjectTemplates に公開されます。
+  * `main`ブランチから`publish`ブランチにマージするためのプルリクを作成し、管理者にApproveしてもらったのちにマージする。
+* [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)で実行しています。
 
 ## ライセンス
 本ライブラリはMITライセンスです。詳細は[LICENSE](./LICENSE) を確認してください。

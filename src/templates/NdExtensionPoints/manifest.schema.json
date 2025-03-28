@@ -101,6 +101,22 @@
           }
         }
       }
+    },
+    "runtime": {
+      "type": "object",
+      "properties": {
+        "sharedAssemblies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "required": [ "name", "main", "lifecycle" ],
@@ -342,8 +358,8 @@
                 "items": {
                   "anyOf": [
                     { "$ref": "#/definitions/ui/button" },
-                    { "$ref": "#/definitions/ui/checkbox" },
-                    { "$ref": "#/definitions/ui/menu" }
+                    { "$ref": "#/definitions/ui/splitbutton" },
+                    { "$ref": "#/definitions/ui/checkbox" }
                   ]
                 },
                 "maxItems": 3
@@ -541,7 +557,7 @@
         "properties": {
           "navigator": {
             "type": "string",
-            "enum": [ "modelNavigator", "profileNavigator" ]
+            "enum": ["Model","ProductLine","Scm","Project","Profile"]
           },
           "onShow": {
             "type": "string"

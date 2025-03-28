@@ -3,36 +3,34 @@
 * dotnetのCLIおよび、Visual Studioで利用できます。
 
 > **Notice:**
-> 本ライブラリはNext Design V2が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
+> 本ライブラリはNext Design V2以降が対象のプロジェクトテンプレートです。Next Design V1.Xでは利用できません。
 
 ## インストール方法
 * コマンドプロンプトより次のように実行して下さい。
 
 ```
-> dotnet new --install NextDesign.Extension.ProjectTemplates
+> dotnet new install NextDesign.Extension.ProjectTemplates
 ```
 
 正常にインストールが完了している場合は次のコマンドを実行すると
 
 ```
-> dotnet new 
+> dotnet new list
 ```
 
 このように表示されます。
 
 ```
-Templates                                     Short Name           Language    Tags
---------------------------------------------  -------------------  ----------  ----------------------
-Console Application                           console              [C#],F#,VB  Common/Console
+テンプレート名                            短い名前  言語  タグ
+----------------------------------------  --------  ----  -----------
 ...
-Next Design Extension with Extension Points    ndextp               [C#]        Next Design
-Next Design エクステンション                          ndext                [C#]        Next Design
+Next Design Extension                     ndext     [C#]  Next Design
+Next Design Extension (Extension Points)  ndextp    [C#]  Next Design
 ...
 
 ```
 
 ## 利用方法
-
 * 次のように実行するとエクステンションのプロジェクトを作成できます。
 
 ```
@@ -52,7 +50,7 @@ Next Design エクステンション                          ndext             
 次のコマンドを実行して下さい。
 
 ```
-> dotnet new --uninstall NextDesign.Extension.ProjectTemplates
+> dotnet new uninstall NextDesign.Extension.ProjectTemplates
 ```
 
 ## ライセンス

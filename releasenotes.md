@@ -1,5 +1,18 @@
 #  Next Design Extension Project Templates Release Notes
 
+## 1.2.3
+* 作成されるプロジェクトのバージョン番号の初期値を 1.0.0 に修正しました。
+
+## 1.2.2
+* pkgContentsフォルダ以下に「profiles」フォルダを作成したため、ユーザが自分でフォルダを作らずにベースプロファイルを配布できるようになりました。
+
+## 1.2.1
+* テンプレートから作成したエクステンションが Next Design V3.1 で動作するよう、参照パッケージのバージョンを直値で指定する形に変更しました。Next Design V4.0 でのみ動作するエクステンションを作成する場合は、公開されている最新の NextDesign.Desktop または NextDesign.Desktop.ExtensionPoints に参照を更新してください。
+* マニフェストスキーマの誤りを修正しました。
+
+## 1.2.0
+* デフォルトのターゲットフレームワークをNET6に変更。
+
 ## 1.1.0
 * Next Design V2.0 Service Update1で`title`タグ利用の廃止に連動し、説明の１行目がタイトルである記載を削除。
 
