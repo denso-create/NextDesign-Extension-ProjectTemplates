@@ -59,6 +59,7 @@
 
 ### Github Actionsによる公開
 * `publish`ブランチにマージすると自動的に https://www.nuget.org/packages/NextDesign.Extension.ProjectTemplates に公開されます。
+  * `main`ブランチから`publish`ブランチにマージするためのプルリクを作成し、管理者にApproveしてもらったのちにマージする。
 * [publish to nugetアクション](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/actions/workflows/publish.yml)で実行しています。
 
 ## ライセンス
