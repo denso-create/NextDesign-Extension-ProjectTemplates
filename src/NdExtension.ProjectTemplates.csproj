@@ -3,7 +3,6 @@
     <PackageType>Template</PackageType>
     <PackageVersion>1.2.3</PackageVersion>
     <PackageId>NextDesign.Extension.ProjectTemplates</PackageId>
-    <Title>Next Design Extension Templates</Title>
     <Authors>DENSO CREATE INC.</Authors>
     <Description>Next Designのエクステンション開発のためのプロジェクトテンプレートです。dotnetのCLIおよび、Visual Studioで利用できます。
 
