@@ -15,7 +15,17 @@
 * エクステンションが実行できるようにビルド時にファイルのコピー設定
 
 詳しくは[エクステンション開発プロジェクトテンプレート](https://docs.nextdesign.app/extension/docs/libs/ProjectTemplates/intro)を参照して下さい。
-</Description>
+
+This is a Next Design project template for extension development. It can be used with dotnet CLI and Visual Studio.
+
+Using a project template makes it very easy to start developing an extension. The project template comes with the following settings already configured:
+
+* References to library packages related to extension development
+* Manifest file
+* Basic implementation of the extension
+* Settings to copy files at build time so that the extension can be executed
+
+For more information, see [Extension Development Project Template](https://docs.nextdesign.app/extension/docs/libs/ProjectTemplates/intro).</Description>
     <PackageTags>NextDesign;templates</PackageTags>
     <TargetFramework>netstandard2.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
