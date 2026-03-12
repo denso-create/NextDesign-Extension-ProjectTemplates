@@ -1,4 +1,5 @@
 #  Next Design Extension Project Templates Release Notes
+* 作成されるプロジェクトで参照するNextDesign.DesktopとExtensionPointsのバージョンが常に最新を参照するように修正しました。
 
 ## 1.2.3
 * 作成されるプロジェクトのバージョン番号の初期値を 1.0.0 に修正しました。
