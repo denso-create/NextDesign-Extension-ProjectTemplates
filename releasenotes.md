@@ -1,4 +1,6 @@
 #  Next Design Extension Project Templates Release Notes
+
+## 1.2.5
 * ターゲットフレームワークの選択肢を `.NET 10`、`.NET 8` に拡張し、既定値を `.NET 10` に変更しました。
 
 ## 1.2.4
