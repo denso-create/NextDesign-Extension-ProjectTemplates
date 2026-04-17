@@ -43,10 +43,20 @@ Next Design Extension (Extension Points)  ndextp    [C#]  Next Design
 > dotnet new ndext -n MyExt1
 ```
 
+* ターゲットフレームワークは `.NET 10` が既定で、`.NET 8` も選択できます。
+
+```
+> dotnet new ndext -n MyExt1 --Framework net8.0
+```
+
 * また、よりシンプルにエクステンションの開発が可能な、[NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/)を利用したエクステンションのプロジェクトも作成可能です。
 
 ```
 > dotnet new ndextp -n MyExt2
+```
+
+```
+> dotnet new ndextp -n MyExt2 --Framework net8.0
 ```
 
 * また、Visual Studioの新規プロジェクト作成のダイアログでも作成可能です。
@@ -108,10 +118,20 @@ Next Design Extension (Extension Points)  ndextp      [C#]     Next Design
 > dotnet new ndext -n MyExt1
 ```
 
+* `.NET 10` is the default target framework, and you can also choose `.NET 8` or `.NET 6`.
+
+```
+> dotnet new ndext -n MyExt1 --Framework net8.0
+```
+
 * You can also create an extension project using [NextDesign.Desktop.ExtensionPoints](https://www.nuget.org/packages/NextDesign.Desktop.ExtensionPoints/), which allows you to develop extensions more simply.
 
 ```
 > dotnet new ndextp -n MyExt2
+```
+
+```
+> dotnet new ndextp -n MyExt2 --Framework net8.0
 ```
 
 * You can also create it in the Visual Studio new project creation dialog.
