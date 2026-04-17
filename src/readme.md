@@ -118,7 +118,7 @@ Next Design Extension (Extension Points)  ndextp      [C#]     Next Design
 > dotnet new ndext -n MyExt1
 ```
 
-* `.NET 10` is the default target framework, and you can also choose `.NET 8` or `.NET 6`.
+* `.NET 10` is the default target framework, and you can also choose `.NET 8`.
 
 ```
 > dotnet new ndext -n MyExt1 --Framework net8.0
