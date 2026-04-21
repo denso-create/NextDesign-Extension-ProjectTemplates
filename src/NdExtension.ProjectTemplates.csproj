@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.2.4</PackageVersion>
+    <PackageVersion>1.2.5</PackageVersion>
     <PackageId>NextDesign.Extension.ProjectTemplates</PackageId>
     <Authors>DENSO CREATE INC.</Authors>
     <Description>Next Designのエクステンション開発のためのプロジェクトテンプレートです。dotnetのCLIおよび、Visual Studioで利用できます。
@@ -30,14 +30,13 @@ For more information, see [Extension Development Project Template](https://docs.
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
-    <Version>1.2.4</Version>
+    <Version>1.2.5</Version>
     <Company>DENSO CREATE INC.</Company>
     <Product>NextDesign.Extension.ProjectTemplates</Product>
     <Copyright>DENSO CREATE INC.</Copyright>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/denso-create/NextDesign-Extension-ProjectTemplates</PackageProjectUrl>
     <RepositoryUrl>https://github.com/denso-create/NextDesign-Extension-ProjectTemplates</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
