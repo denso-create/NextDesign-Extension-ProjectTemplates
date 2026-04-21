@@ -69,8 +69,8 @@ Next Design Extension (Extension Points)  ndextp    [C#]  Next Design
 > dotnet new uninstall NextDesign.Extension.ProjectTemplates
 ```
 
-## 5. ライセンス
-本ライブラリはMITライセンスです。詳細は[LICENSE](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/blob/main/LICENSE) を確認してください。
+## 5. ライセンス　/　免責事項
+本拡張機能は、Next Designの使用許諾契約書におけるサンプルとして提供されています。サンプルに関する取り扱い、および免責事項については、Next Designの使用許諾契約書（[使用許諾契約 | システム・ソフトウェア設計ツール Next Design](https://www.nextdesign.app/support/agreements/)）に準拠します。ご利用にあたっては、当該使用許諾契約書の内容をご確認ください。
 
 ---
 
@@ -143,5 +143,5 @@ Execute the following command.
 > dotnet new uninstall NextDesign.Extension.ProjectTemplates
 ```
 
-## 5. License
-This library is licensed under the MIT License. Please see [LICENSE](https://github.com/denso-create/NextDesign-Extension-ProjectTemplates/blob/main/LICENSE) for details.
+## 5. License / Disclaimer
+This extension is provided as a sample under the Next Design License Agreement. The handling of samples and the disclaimer are governed by the Next Design License Agreement ([License Agreement | Next Design, System and Software Design Tool](https://www.nextdesign.app/support/agreements/)). Before using this extension, please review the contents of the applicable license agreement.
